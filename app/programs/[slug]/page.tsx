@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import SubNav from "@/components/SubNav";
 import SubFooter from "@/components/SubFooter";
-import PayButton from "@/components/PayButton";
+
 import type { Metadata } from "next";
 import { ProgramHero } from "@/components/programs/hero";
 import Enrollment from "@/components/programs/enrollment";
