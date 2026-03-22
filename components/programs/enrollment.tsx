@@ -41,12 +41,7 @@ const Enrollment = () => {
                                 <p key={d} className="flex items-center gap-2 text-slate-500"><span className="text-[#3B7EBB]">●</span> {d}</p>
                             ))}
                         </div>
-                        {/* <PayButton
-                            programId="full-stack"
-                            programName="Full Stack Development (Job Guarantee)"
-                            amount={30000}
-                            originalAmount={50000}
-                        /> */}
+                        
                     </div>
                 </div>
             </section>
