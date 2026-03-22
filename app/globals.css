@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #1B3B5A;
+  --color-brand-primary: #3B7EBB;
+  --color-brand-sky: #7FB8E1;
+  --color-brand-soft: #F8F9FF;
+  --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 30s linear infinite;
+}
+
+.blob-bg {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
