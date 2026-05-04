@@ -1,5 +1,6 @@
 import Link from "next/link";
-
+import Image from "next/image";
+import logo from '@/public/logo.png'
 export default function Footer() {
   return (
     <footer className="bg-[#1B3B5A] text-white pt-20 pb-10 px-6 overflow-hidden relative">
@@ -7,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-[#3B7EBB] rounded-lg flex items-center justify-center text-white font-bold text-xl">Q</div>
+              <div className="w-10 h-10 flex items-center justify-center  font-bold text-xl  transition-all duration-300 "><Image src={logo} alt="Qubinaire logo" /></div>
               <span className="text-2xl font-extrabold tracking-tighter">Qubinaire</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed">Empowering the next generation of tech professionals through industry-aligned training and 100% placement support.</p>
