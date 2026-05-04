@@ -1,8 +1,35 @@
 import Image from "next/image";
+import { client } from "@/sanity/client";
+const QUERY = `*[_type == "testimonial"] | order(order asc) {
+  _id,
+  name,
+  role,
+  hike,
+  message,
+  "imageUrl": image.asset->url
+}`;
 
-export default function Outcomes() {
+// 15 Unique Testimonials
+
+export default async function Outcomes() {
+  const alumni = await client.fetch(QUERY);
   return (
     <section id="outcomes" className="py-24 px-6 bg-white overflow-hidden">
+      <style dangerouslySetInnerHTML={{
+        __html: `
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+          display: flex;
+          animation: marquee 50s linear infinite;
+        }
+        .animate-marquee:hover {
+          animation-play-state: paused;
+        }
+      `}} />
+
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-4">
           <div className="max-w-xl">
@@ -16,13 +43,10 @@ export default function Outcomes() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-12 gap-8 items-stretch">
+        <div className="grid lg:grid-cols-12 gap-8 items-stretch mb-12">
           {/* Salary chart */}
-          <div className="lg:col-span-7 bg-[#F8F9FF] rounded-[2.5rem] p-8 md:p-12 relative overflow-hidden group">
-            <div
-              className="absolute inset-0 opacity-10 pointer-events-none"
-              style={{ backgroundImage: "radial-gradient(#1B3B5A 1px, transparent 1px)", backgroundSize: "20px 20px" }}
-            />
+          <div className="lg:col-span-12 bg-[#F8F9FF] rounded-[2.5rem] p-8 md:p-12 relative overflow-hidden group">
+            <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: "radial-gradient(#1B3B5A 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
             <h4 className="text-xl font-bold text-[#1B3B5A] mb-10 relative z-10">Average Salary Leap</h4>
             <div className="relative z-10 space-y-8">
               <div className="relative">
@@ -51,47 +75,35 @@ export default function Outcomes() {
             </div>
           </div>
 
-          {/* Testimonial + stats */}
-          <div className="lg:col-span-5 flex flex-col gap-6">
-            <div className="bg-[#1B3B5A] rounded-[2.5rem] p-8 text-white relative overflow-hidden flex-grow flex flex-col justify-center">
-              <div className="absolute -top-10 -right-10 w-32 h-32 bg-[#7FB8E1] opacity-10 rotate-45" />
-              <div className="relative z-10">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 rounded-full border-2 border-[#7FB8E1] overflow-hidden bg-slate-200">
-                    <Image
-                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150"
-                      alt="Rahul Sharma"
-                      width={64}
-                      height={64}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h5 className="font-bold text-lg">Rahul Sharma</h5>
-                    <p className="text-[#7FB8E1] text-xs font-bold uppercase">Placed at Accenture</p>
+        </div>
+
+        {/* Scrolling Marquee - 15 Testimonials */}
+        <div className="relative mt-20">
+          <div className="animate-marquee gap-8">
+            {alumni.map((person: any, index: number) => (
+              <div key={index} className="w-[400px] flex-shrink-0 flex flex-col gap-4">
+                <div className="bg-[#1B3B5A] rounded-[2.5rem] p-8 text-white relative overflow-hidden min-h-[250px] flex flex-col justify-center">
+                  <div className="absolute -top-10 -right-10 w-32 h-32 bg-[#7FB8E1] opacity-10 rotate-45" />
+                  <div className="relative z-10">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="w-12 h-12 rounded-full border-2 border-[#7FB8E1] overflow-hidden bg-slate-200">
+                        <img src={person.imageUrl} alt={person.name} className="w-full h-full object-cover" />
+                      </div>
+                      <div>
+                        <h5 className="font-bold text-md">{person.name}</h5>
+                        <p className="text-[#7FB8E1] text-[10px] font-bold uppercase tracking-widest">{person.role}</p>
+                      </div>
+                    </div>
+                    <p className="text-xs leading-relaxed text-slate-300 italic mb-4">"{person.message}"</p>
+                    <div className="pt-4 border-t border-white/10 flex justify-between items-center">
+                      <span className="text-[10px] font-bold text-slate-400 uppercase">Verified Outcome</span>
+
+                    </div>
                   </div>
                 </div>
-                <p className="text-sm leading-relaxed text-slate-300 italic mb-6">
-                  "The 100% Job Guarantee program is real. I transitioned from a non-tech role to a Data Scientist at Accenture with an{" "}
-                  <span className="text-white font-bold">8.5 LPA package</span>."
-                </p>
-                <div className="flex items-center justify-between pt-6 border-t border-white/10">
-                  <span className="text-[10px] font-bold text-slate-400">SUCCESS STORY #2041</span>
-                  <a href="#" className="text-xs font-bold text-[#7FB8E1] hover:underline">Read Profile →</a>
-                </div>
+
               </div>
-            </div>
-            <div className="bg-[#F8F9FF] border border-slate-100 rounded-[2rem] p-6 flex items-center justify-around text-center">
-              <div>
-                <p className="text-2xl font-black text-[#1B3B5A]">350%</p>
-                <p className="text-[9px] uppercase font-bold text-slate-400">Avg. Salary Hike</p>
-              </div>
-              <div className="w-px h-10 bg-slate-200" />
-              <div>
-                <p className="text-2xl font-black text-[#1B3B5A]">45 Days</p>
-                <p className="text-[9px] uppercase font-bold text-slate-400">Avg. Placement Time</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

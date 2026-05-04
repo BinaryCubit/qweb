@@ -19,8 +19,8 @@ export default function Contact() {
             </p>
             <div className="space-y-6">
               {[
-                { icon: "📞", label: "Call for Queries", value: "+91 8000886594" },
-                { icon: "✉️", label: "Email Us", value: "info@qubinaire.com" },
+                { icon: "📞", label: "Call for Queries", value: "+91 8398948765, 7988007320" },
+                { icon: "✉️", label: "Email Us", value: "bd@qubinaire.co.in fh" },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-4">
                   <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-[#7FB8E1] border border-white/10">

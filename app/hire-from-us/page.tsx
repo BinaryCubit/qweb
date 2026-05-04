@@ -3,6 +3,7 @@ import SubNav from "@/components/SubNav";
 import SubFooter from "@/components/SubFooter";
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = { title: "Hire Pre-Vetted Talent | Qubinaire for Recruiters" };
 
@@ -21,7 +22,7 @@ const steps = [
 export default function HireFromUsPage() {
   return (
     <>
-      <SubNav activeLink="hire-from-us" ctaHref="#hiring-form" ctaLabel="HIRE NOW" ctaStyle="navy" />
+      <Header />
 
       <section className="py-24 bg-[#F8F9FF] border-b border-slate-100 px-6">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">

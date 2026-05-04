@@ -1,11 +1,9 @@
 import Link from "next/link";
-import SubNav from "@/components/SubNav";
-import SubFooter from "@/components/SubFooter";
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import { type SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
-import Image from "next/image";
+import Header from "@/components/Header";
 const POSTS_QUERY = `*[_type == "courses"] | order(_createdAt desc){
   _id,
   title,
@@ -25,22 +23,16 @@ const POSTS_QUERY = `*[_type == "courses"] | order(_createdAt desc){
   },
 
   jobGuarantee,
-  avgSalary
+  avgSalary,
+  link
 }`;
 const options = { next: { revalidate: 30 } };
-
 export const metadata: Metadata = { title: "Our Programs | Qubinaire Career Tracks" };
-
-
-
-
-
 export default async function ProgramsPage() {
   const courses = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
-
   return (
     <>
-      <SubNav activeLink="programs" ctaHref="https://wa.me/8398948765" ctaLabel="BOOK COUNSELLING" />
+      <Header />
       <section className="py-20 bg-[#F8F9FF] px-6 border-b border-slate-100">
         <div className="max-w-7xl mx-auto text-center">
           <span className="text-[#3B7EBB] font-bold text-xs uppercase tracking-[0.3em]">Skill Up for {(new Date().getFullYear())}</span>
@@ -54,9 +46,7 @@ export default async function ProgramsPage() {
             {courses.map((c) => (
               <div key={c.title} className="bg-white p-10 rounded-[2.5rem] border border-slate-100 flex flex-col justify-between hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
                 <div>
-
                   <img src={c.thumbnail} alt={c.title} className=" bg-[#F8F9FF] rounded-2xl flex items-center justify-center text-3xl mb-8" />
-
                   <h3 className="text-2xl font-bold text-[#1B3B5A] mb-2">{c.title}</h3>
                   <p className="text-[10px] font-bold text-[#3B7EBB] uppercase tracking-widest mb-6">{c.duration}</p>
                   <ul className="space-y-4 mb-10 text-sm font-medium">
@@ -68,7 +58,7 @@ export default async function ProgramsPage() {
                     <p className="text-[10px] font-bold text-slate-400 uppercase">Avg. Salary</p>
                     <p className="text-lg font-black text-[#1B3B5A]">{c.avgSalary}</p>
                   </div>
-                  <Link href={`/programs/${c.slug}`} className="block text-center py-4 bg-[#1B3B5A] text-white font-bold rounded-2xl hover:bg-[#3B7EBB] transition-colors">VIEW FULL DETAILS</Link>
+                  <Link href={`${c.link}`} className="block text-center py-4 bg-[#1B3B5A] text-white font-bold rounded-2xl hover:bg-[#3B7EBB] transition-colors">VIEW FULL DETAILS</Link>
                 </div>
               </div>
             ))}
@@ -79,11 +69,10 @@ export default async function ProgramsPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-extrabold mb-8">Not sure which track to choose?</h2>
           <p className="text-slate-700 mb-10">Our career counselors are industry experts who can help identify your strengths and map them to the right tech role.</p>
-          <Link href="https:wa.me/8398948765" className="inline-block bg-[#3B7EBB] text-white px-12 py-5 rounded-2xl font-black transition-all hover:scale-110 shadow-2xl">BOOK A FREE MENTOR SESSION</Link>
+          <Link href="httpswa.me/8398948765" className="inline-block bg-[#3B7EBB] text-white px-12 py-5 rounded-2xl font-black transition-all hover:scale-110 shadow-2xl">BOOK A FREE MENTOR SESSION</Link>
         </div>
       </section>
       <Footer />
-
     </>
   );
 }

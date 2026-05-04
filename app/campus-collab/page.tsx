@@ -1,13 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import SubNav from "@/components/SubNav";
-import SubFooter from "@/components/SubFooter";
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
-
-
+import Header from "@/components/Header";
 export const metadata: Metadata = { title: "Campus Collaboration | Qubinaire Institutional Partnerships" };
-
 const pillars = [
   { icon: "📄", title: "Syllabus Integration", desc: "Industry-aligned modules embedded into your BCA, MCA, and B.Tech curriculum.", href: "/syllabus-integration" },
   { icon: "👨‍🏫", title: "Faculty Development", desc: "FDP programs to upskill your faculty in AI, Data Science, and Full Stack Dev.", href: "/faculty-development" },
@@ -18,7 +14,7 @@ const pillars = [
 export default function CampusCollabPage() {
   return (
     <>
-      <SubNav activeLink="campus-collab" ctaHref="#partner-form" ctaLabel="BECOME A PARTNER" ctaStyle="navy" />
+      <Header />
 
       <section className="relative py-24 bg-[#F8F9FF] overflow-hidden border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">

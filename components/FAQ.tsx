@@ -39,7 +39,7 @@ export default function FAQ() {
                 <div className="w-12 h-12 bg-[#3B7EBB] rounded-full flex items-center justify-center text-white shadow-lg">📞</div>
                 <div>
                   <p className="text-xs font-bold text-slate-400 uppercase">Direct Helpline</p>
-                  <p className="text-lg font-black text-[#1B3B5A]">+91 8000886594</p>
+                  <p className="text-lg font-black text-[#1B3B5A]">+91 8398948765</p>
                 </div>
               </div>
             </div>
