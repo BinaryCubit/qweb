@@ -77,9 +77,7 @@ export default function Header() {
 
           {/* Actions */}
           <div className="flex items-center gap-4">
-            <a href="/contact" className="hidden sm:inline-flex bg-gradient-to-r from-[#1B3B5A] to-[#3B7EBB] text-white px-6 py-3 rounded-xl text-[10px] font-black tracking-widest shadow-xl transition-all transform hover:-translate-y-0.5 active:scale-95">
-              BOOK FREE COUNSELLING
-            </a>
+           
 
             {/* Mobile Toggle Button */}
             <button
