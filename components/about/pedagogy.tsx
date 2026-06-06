@@ -26,8 +26,8 @@ export const Pedagogy = () => {
                 </div>
                 <div className="bg-white/5 p-10 rounded-[3rem] border border-white/10 backdrop-blur-md">
                     <div className="text-center">
-                        <p className="text-6xl font-black text-white mb-2">2020</p>
-                        <p className="text-xs font-bold text-brand-sky uppercase tracking-[0.4em] mb-10">Founded in Pune</p>
+                        <p className="text-6xl font-black text-white mb-2">2025</p>
+                        <p className="text-xs font-bold text-brand-sky uppercase tracking-[0.4em] mb-10">Founded in Gurgaon</p>
                     </div>
                     <div className="grid grid-cols-2 gap-8 text-center border-t border-white/10 pt-10">
                         <div>

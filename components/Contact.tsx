@@ -19,7 +19,7 @@ export default function Contact() {
             </p>
             <div className="space-y-6">
               {[
-                { icon: "📞", label: "Call for Queries", value: "+91 8398948765, 7988007320" },
+                { icon: "📞", label: "Call for Queries", value: "+91 9183333734, 9183330569" },
                 { icon: "✉️", label: "Email Us", value: "bd@qubinaire.co.in fh" },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-4">

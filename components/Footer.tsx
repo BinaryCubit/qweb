@@ -45,7 +45,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-slate-300">
               <li className="flex items-start gap-3"><span className="text-[#7FB8E1]">📍</span><span>Head Quarter, 722/17 Nai Basti, Sector 8, Gurgaon, Haryana, India - 122001</span></li>
               <li className="flex items-start gap-3"><span className="text-[#7FB8E1]">📍</span><span>Qubinaire Training & Placement Center, Keshavpura Circle, Kota, Rajasthan, India</span></li>
-              <li className="flex items-center gap-3"><span className="text-[#7FB8E1]">📞</span><span>+91 7988007320, 8398948765</span></li>
+              <li className="flex items-center gap-3"><span className="text-[#7FB8E1]">📞</span><span>+91 9183333734, 9183330569</span></li>
               <li className="flex items-center gap-3"><span className="text-[#7FB8E1]">✉️</span><span>bd@qubinaire.co.in</span></li>
               <li className="mt-6 pt-6 border-t border-white/10">
                 <p className="text-[10px] font-bold text-slate-500 uppercase mb-2">Support Hours</p>
