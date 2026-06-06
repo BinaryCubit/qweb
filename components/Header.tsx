@@ -24,7 +24,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
           <div className="flex items-center gap-5">
             <a href="tel:+918000886594" className="flex items-center gap-2 hover:text-[#7FB8E1] transition-colors">
-              <span className="opacity-70">📞</span> +91 8398948765
+              <span className="opacity-70">📞</span> +91 9183333734
             </a>
             <a href="mailto:info@qubinaire.com" className="hidden md:flex items-center gap-2 hover:text-[#7FB8E1] transition-colors border-l border-white/10 pl-5">
               <span className="opacity-70">✉️</span> bd@qubinaire.com
