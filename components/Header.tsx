@@ -27,7 +27,7 @@ export default function Header() {
               <span className="opacity-70">📞</span> +91 9183333734
             </a>
             <a href="mailto:info@qubinaire.com" className="hidden md:flex items-center gap-2 hover:text-[#7FB8E1] transition-colors border-l border-white/10 pl-5">
-              <span className="opacity-70">✉️</span> bd@qubinaire.com
+              <span className="opacity-70">✉️</span> bd@qubinaire.co.in
             </a>
             <span className="hidden lg:flex items-center gap-2 border-l border-white/10 pl-5 text-[#7FB8E1] font-bold">
               🎓 2000+ Alumni Placed
