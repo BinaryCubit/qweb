@@ -72,154 +72,154 @@ export default function Programs() {
     //   </div>
     // </section>
     <>
-    <section id="programs" className="py-24 px-6 bg-slate-50">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-brand-navy mb-4 tracking-tight">
-            Our Job-Focused <span className="text-brand-primary italic">Programs</span>
-          </h2>
-          <p className="text-slate-500">Scroll down to see our elite career tracks.</p>
-        </div>
-
-        <div className="space-y-24">
-
-          <div className="sticky top-24 transition-all duration-500">
-            <div className="bg-white rounded-[3rem] border border-slate-200 shadow-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-12 min-h-[450px]">
-              <div className="flex-1">
-                <span className="text-brand-primary font-bold text-xs uppercase tracking-widest">01. Artificial Intelligence</span>
-                <h3 className="text-3xl md:text-4xl font-black text-brand-navy mt-4 mb-6">Data Science & AI</h3>
-                <p className="text-slate-500 mb-8 leading-relaxed">Master Python, Machine Learning, and Generative AI with 100% placement support.</p>
-                <a href="data-science-ai.html" className="inline-block bg-brand-navy text-white px-8 py-4 rounded-2xl font-bold hover:bg-brand-primary transition-all">Explore Program →</a>
-              </div>
-              <div className="flex-1 w-full">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800" className="rounded-[2rem] w-full h-64 object-cover shadow-lg" alt="AI"/>
-              </div>
-            </div>
-          </div>
-
-          <div className="sticky top-28 transition-all duration-500">
-            <div className="bg-brand-navy rounded-[3rem] shadow-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-12 min-h-[450px] text-white">
-              <div className="flex-1">
-                <span className="text-brand-sky font-bold text-xs uppercase tracking-widest">02. Web Engineering</span>
-                <h3 className="text-3xl md:text-4xl font-black mb-6">Full Stack Development</h3>
-                <p className="text-slate-300 mb-8 leading-relaxed">Master the MERN stack and Java ecosystem to build production-scale applications.</p>
-                <a href="full-stack.html" className="inline-block bg-brand-primary text-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-brand-navy transition-all">Explore Program →</a>
-              </div>
-              <div className="flex-1 w-full">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800" className="rounded-[2rem] w-full h-64 object-cover shadow-lg" alt="Fullstack"/>
-              </div>
-            </div>
-          </div>
-
-          <div className="sticky top-32 transition-all duration-500">
-            <div className="bg-white rounded-[3rem] border border-slate-200 shadow-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-12 min-h-[450px]">
-              <div className="flex-1">
-                <span className="text-brand-primary font-bold text-xs uppercase tracking-widest">03. Business Intelligence</span>
-                <h3 className="text-3xl md:text-4xl font-black text-brand-navy mt-4 mb-6">Data Analytics Mastery</h3>
-                <p className="text-slate-500 mb-8 leading-relaxed">Turn raw data into business insights using SQL, Power BI, and Advanced Excel.</p>
-                <a href="data-analytics.html" className="inline-block bg-brand-navy text-white px-8 py-4 rounded-2xl font-bold hover:bg-brand-primary transition-all">Explore Program →</a>
-              </div>
-              <div className="flex-1 w-full">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800" className="rounded-[2rem] w-full h-64 object-cover shadow-lg" alt="Analytics" />
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="programs" className="py-24 px-6 bg-slate-50">
-    <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-20">
-            <span className="text-brand-primary font-bold text-xs uppercase tracking-[0.3em]">Career Pathways</span>
-            <h2 className="text-4xl md:text-5xl font-black text-brand-navy mt-4 mb-6 tracking-tight">
-                Master the <span className="text-brand-primary italic">Modern Stack</span>
+      <section id="programs" className="py-24 px-6 bg-slate-50">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-extrabold text-brand-navy mb-4 tracking-tight">
+              Our Job-Focused <span className="text-brand-primary italic">Programs</span>
             </h2>
-            <p className="text-slate-500 max-w-xl mx-auto text-sm">Scroll to explore our specialized engineering tracks. Each program is designed for 100% job readiness.</p>
-        </div>
+            <p className="text-slate-500">Scroll down to see our elite career tracks.</p>
+          </div>
 
-        <div className="space-y-24">
-            
+          <div className="space-y-24">
+
             <div className="sticky top-24 transition-all duration-500">
-                <div className="bg-white rounded-[3rem] border border-slate-200 shadow-2xl p-8 md:p-12 flex flex-col lg:flex-row items-center gap-12 min-h-[500px]">
-                    <div className="flex-1">
-                        <div className="w-16 h-16 bg-brand-soft rounded-2xl flex items-center justify-center text-3xl mb-8">⚛️</div>
-                        <h3 className="text-3xl font-black text-brand-navy mb-4">MERN Stack Specialization</h3>
-                        <p className="text-slate-500 mb-8 leading-relaxed italic">"The startup standard. Master MongoDB, Express, React, and Node.js to build lightning-fast web applications."</p>
-                        <ul className="space-y-3 mb-10 text-sm font-bold text-brand-navy/70">
-                            <li>✔ Real-time Socket.io Projects</li>
-                            <li>✔ Redux State Management</li>
-                            <li>✔ REST API Architecture</li>
-                        </ul>
-                        <a href="full-stack.html" className="inline-block bg-brand-primary text-white px-10 py-4 rounded-2xl font-bold shadow-lg shadow-brand-primary/20 hover:scale-105 transition-all">View Roadmap →</a>
-                    </div>
-                    <div className="flex-1 w-full">
-                        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800" className="rounded-[2.5rem] w-full h-72 object-cover shadow-inner" alt="MERN Stack"/>
-                    </div>
+              <div className="bg-white rounded-[3rem] border border-slate-200 shadow-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-12 min-h-[450px]">
+                <div className="flex-1">
+                  <span className="text-brand-primary font-bold text-xs uppercase tracking-widest">01. Artificial Intelligence</span>
+                  <h3 className="text-3xl md:text-4xl font-black text-brand-navy mt-4 mb-6">Data Science & AI</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed">Master Python, Machine Learning, and Generative AI with 100% placement support.</p>
+                  <a href="/programs" className="inline-block bg-brand-navy text-white px-8 py-4 rounded-2xl font-bold hover:bg-brand-primary transition-all">Explore Program →</a>
                 </div>
+                <div className="flex-1 w-full">
+                  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800" className="rounded-[2rem] w-full h-64 object-cover shadow-lg" alt="AI" />
+                </div>
+              </div>
             </div>
 
             <div className="sticky top-28 transition-all duration-500">
-                <div className="bg-brand-navy rounded-[3rem] shadow-2xl p-8 md:p-12 flex flex-col lg:flex-row items-center gap-12 min-h-[500px] text-white">
-                    <div className="flex-1">
-                        <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-3xl mb-8">☕</div>
-                        <h3 className="text-3xl font-black mb-4">Java Full Stack (Enterprise)</h3>
-                        <p className="text-slate-400 mb-8 leading-relaxed italic">"Built for scale. Master Spring Boot, Microservices, and Angular/React for high-end corporate environments."</p>
-                        <ul className="space-y-3 mb-10 text-sm font-bold text-brand-sky">
-                            <li>✔ Spring Security & JWT</li>
-                            <li>✔ Hibernate & JPA</li>
-                            <li>✔ Enterprise System Design</li>
-                        </ul>
-                        <a href="full-stack.html" className="inline-block bg-brand-sky text-brand-navy px-10 py-4 rounded-2xl font-bold hover:bg-white transition-all">View Roadmap →</a>
-                    </div>
-                    <div className="flex-1 w-full">
-                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800" className="rounded-[2.5rem] w-full h-72 object-cover" alt="Java Full Stack"/>
-                    </div>
+              <div className="bg-brand-navy rounded-[3rem] shadow-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-12 min-h-[450px] text-white">
+                <div className="flex-1">
+                  <span className="text-brand-sky font-bold text-xs uppercase tracking-widest">02. Web Engineering</span>
+                  <h3 className="text-3xl md:text-4xl font-black mb-6">Full Stack Development</h3>
+                  <p className="text-slate-300 mb-8 leading-relaxed">Master the MERN stack and Java ecosystem to build production-scale applications.</p>
+                  <a href="/programs" className="inline-block bg-brand-primary text-white px-8 py-4 rounded-2xl font-bold hover:bg-white hover:text-brand-navy transition-all">Explore Program →</a>
                 </div>
+                <div className="flex-1 w-full">
+                  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800" className="rounded-[2rem] w-full h-64 object-cover shadow-lg" alt="Fullstack" />
+                </div>
+              </div>
             </div>
 
             <div className="sticky top-32 transition-all duration-500">
-                <div className="bg-white rounded-[3rem] border border-slate-200 shadow-2xl p-8 md:p-12 flex flex-col lg:flex-row items-center gap-12 min-h-[500px]">
-                    <div className="flex-1">
-                        <div className="w-16 h-16 bg-brand-soft rounded-2xl flex items-center justify-center text-3xl mb-8">🐍</div>
-                        <h3 className="text-3xl font-black text-brand-navy mb-4">Python Full Stack & AI</h3>
-                        <p className="text-slate-500 mb-8 leading-relaxed italic">"The most versatile stack. Combine Django/Flask with AI integration for next-gen web products."</p>
-                        <ul className="space-y-3 mb-10 text-sm font-bold text-brand-navy/70">
-                            <li>✔ Django Rest Framework</li>
-                            <li>✔ AI Model Integration</li>
-                            <li>✔ PostgreSQL Optimization</li>
-                        </ul>
-                        <a href="full-stack.html" className="inline-block bg-brand-navy text-white px-10 py-4 rounded-2xl font-bold hover:bg-brand-primary transition-all">View Roadmap →</a>
-                    </div>
-                    <div className="flex-1 w-full">
-                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800" className="rounded-[2.5rem] w-full h-72 object-cover shadow-inner" alt="Python Full Stack"/>
-                    </div>
+              <div className="bg-white rounded-[3rem] border border-slate-200 shadow-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-12 min-h-[450px]">
+                <div className="flex-1">
+                  <span className="text-brand-primary font-bold text-xs uppercase tracking-widest">03. Business Intelligence</span>
+                  <h3 className="text-3xl md:text-4xl font-black text-brand-navy mt-4 mb-6">Data Analytics Mastery</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed">Turn raw data into business insights using SQL, Power BI, and Advanced Excel.</p>
+                  <a href="/programs" className="inline-block bg-brand-navy text-white px-8 py-4 rounded-2xl font-bold hover:bg-brand-primary transition-all">Explore Program →</a>
                 </div>
+                <div className="flex-1 w-full">
+                  <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800" className="rounded-[2rem] w-full h-64 object-cover shadow-lg" alt="Analytics" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="programs" className="py-24 px-6 bg-slate-50">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-20">
+            <span className="text-brand-primary font-bold text-xs uppercase tracking-[0.3em]">Career Pathways</span>
+            <h2 className="text-4xl md:text-5xl font-black text-brand-navy mt-4 mb-6 tracking-tight">
+              Master the <span className="text-brand-primary italic">Modern Stack</span>
+            </h2>
+            <p className="text-slate-500 max-w-xl mx-auto text-sm">Scroll to explore our specialized engineering tracks. Each program is designed for 100% job readiness.</p>
+          </div>
+
+          <div className="space-y-24">
+
+            <div className="sticky top-24 transition-all duration-500">
+              <div className="bg-white rounded-[3rem] border border-slate-200 shadow-2xl p-8 md:p-12 flex flex-col lg:flex-row items-center gap-12 min-h-[500px]">
+                <div className="flex-1">
+                  <div className="w-16 h-16 bg-brand-soft rounded-2xl flex items-center justify-center text-3xl mb-8">⚛️</div>
+                  <h3 className="text-3xl font-black text-brand-navy mb-4">MERN Stack Specialization</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed italic">"The startup standard. Master MongoDB, Express, React, and Node.js to build lightning-fast web applications."</p>
+                  <ul className="space-y-3 mb-10 text-sm font-bold text-brand-navy/70">
+                    <li>✔ Real-time Socket.io Projects</li>
+                    <li>✔ Redux State Management</li>
+                    <li>✔ REST API Architecture</li>
+                  </ul>
+                  <a href="/programs" className="inline-block bg-brand-primary text-white px-10 py-4 rounded-2xl font-bold shadow-lg shadow-brand-primary/20 hover:scale-105 transition-all">View Roadmap →</a>
+                </div>
+                <div className="flex-1 w-full">
+                  <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800" className="rounded-[2.5rem] w-full h-72 object-cover shadow-inner" alt="MERN Stack" />
+                </div>
+              </div>
+            </div>
+
+            <div className="sticky top-28 transition-all duration-500">
+              <div className="bg-brand-navy rounded-[3rem] shadow-2xl p-8 md:p-12 flex flex-col lg:flex-row items-center gap-12 min-h-[500px] text-white">
+                <div className="flex-1">
+                  <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-3xl mb-8">☕</div>
+                  <h3 className="text-3xl font-black mb-4">Java Full Stack (Enterprise)</h3>
+                  <p className="text-slate-400 mb-8 leading-relaxed italic">"Built for scale. Master Spring Boot, Microservices, and Angular/React for high-end corporate environments."</p>
+                  <ul className="space-y-3 mb-10 text-sm font-bold text-brand-sky">
+                    <li>✔ Spring Security & JWT</li>
+                    <li>✔ Hibernate & JPA</li>
+                    <li>✔ Enterprise System Design</li>
+                  </ul>
+                  <a href="/programs" className="inline-block bg-brand-sky text-brand-navy px-10 py-4 rounded-2xl font-bold hover:bg-white transition-all">View Roadmap →</a>
+                </div>
+                <div className="flex-1 w-full">
+                  <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800" className="rounded-[2.5rem] w-full h-72 object-cover" alt="Java Full Stack" />
+                </div>
+              </div>
+            </div>
+
+            <div className="sticky top-32 transition-all duration-500">
+              <div className="bg-white rounded-[3rem] border border-slate-200 shadow-2xl p-8 md:p-12 flex flex-col lg:flex-row items-center gap-12 min-h-[500px]">
+                <div className="flex-1">
+                  <div className="w-16 h-16 bg-brand-soft rounded-2xl flex items-center justify-center text-3xl mb-8">🐍</div>
+                  <h3 className="text-3xl font-black text-brand-navy mb-4">Python Full Stack & AI</h3>
+                  <p className="text-slate-500 mb-8 leading-relaxed italic">"The most versatile stack. Combine Django/Flask with AI integration for next-gen web products."</p>
+                  <ul className="space-y-3 mb-10 text-sm font-bold text-brand-navy/70">
+                    <li>✔ Django Rest Framework</li>
+                    <li>✔ AI Model Integration</li>
+                    <li>✔ PostgreSQL Optimization</li>
+                  </ul>
+                  <a href="/programs" className="inline-block bg-brand-navy text-white px-10 py-4 rounded-2xl font-bold hover:bg-brand-primary transition-all">View Roadmap →</a>
+                </div>
+                <div className="flex-1 w-full">
+                  <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800" className="rounded-[2.5rem] w-full h-72 object-cover shadow-inner" alt="Python Full Stack" />
+                </div>
+              </div>
             </div>
 
             <div className="sticky top-36 transition-all duration-500">
-                <div className="bg-brand-primary rounded-[3rem] shadow-2xl p-8 md:p-12 flex flex-col lg:flex-row items-center gap-12 min-h-[500px] text-white">
-                    <div className="flex-1">
-                        <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-3xl mb-8">☁️</div>
-                        <h3 className="text-3xl font-black mb-4">DevOps & Cloud Engineering</h3>
-                        <p className="text-slate-100 mb-8 leading-relaxed italic">"The backbone of tech. Master AWS, Docker, and Kubernetes for zero-downtime infrastructure."</p>
-                        <ul className="space-y-3 mb-10 text-sm font-bold text-white/80">
-                            <li>✔ CI/CD Pipeline Automation</li>
-                            <li>✔ Kubernetes Orchestration</li>
-                            <li>✔ Terraform (IaC) Mastery</li>
-                        </ul>
-                        <a href="devops-cloud.html" className="inline-block bg-white text-brand-primary px-10 py-4 rounded-2xl font-bold hover:bg-brand-navy hover:text-white transition-all">View Roadmap →</a>
-                    </div>
-                    <div className="flex-1 w-full">
-                        <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&w=800" className="rounded-[2.5rem] w-full h-72 object-cover" alt="DevOps"/>
-                    </div>
+              <div className="bg-brand-primary rounded-[3rem] shadow-2xl p-8 md:p-12 flex flex-col lg:flex-row items-center gap-12 min-h-[500px] text-white">
+                <div className="flex-1">
+                  <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center text-3xl mb-8">☁️</div>
+                  <h3 className="text-3xl font-black mb-4">DevOps & Cloud Engineering</h3>
+                  <p className="text-slate-100 mb-8 leading-relaxed italic">"The backbone of tech. Master AWS, Docker, and Kubernetes for zero-downtime infrastructure."</p>
+                  <ul className="space-y-3 mb-10 text-sm font-bold text-white/80">
+                    <li>✔ CI/CD Pipeline Automation</li>
+                    <li>✔ Kubernetes Orchestration</li>
+                    <li>✔ Terraform (IaC) Mastery</li>
+                  </ul>
+                  <a href="/programs" className="inline-block bg-white text-brand-primary px-10 py-4 rounded-2xl font-bold hover:bg-brand-navy hover:text-white transition-all">View Roadmap →</a>
                 </div>
+                <div className="flex-1 w-full">
+                  <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?auto=format&fit=crop&w=800" className="rounded-[2.5rem] w-full h-72 object-cover" alt="DevOps" />
+                </div>
+              </div>
             </div>
 
+          </div>
         </div>
-    </div>
-</section>
+      </section>
     </>
   );
 }
