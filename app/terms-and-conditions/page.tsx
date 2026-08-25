@@ -166,28 +166,7 @@ export default function TermsAndConditionsPage() {
               />
             </div>
 
-            {/* Program Overview */}
-            <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-              <h2 className="text-xl font-bold text-slate-950">
-                Program Overview
-              </h2>
-
-              <p className="mt-4 leading-7 text-slate-600">
-                Qubinaire Services Private Limited provides an
-                industry-oriented training program comprising classroom and
-                online sessions, laboratory work, practical assignments,
-                projects, assessments, interview preparation, career services
-                and placement activities.
-              </p>
-
-              <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                <InfoItem title="Course" value="DA" />
-                <InfoItem title="Minimum Duration" value="300 Hours" />
-                <InfoItem title="Batch" value="01" />
-                <InfoItem title="Minimum Placement Package" value="₹4,00,000 LPA" />
-              </div>
-            </section>
-
+           
             {/* 1 */}
             <Section id="eligibility" title="1. Who Qualifies for the Job Guarantee?">
               <p>
