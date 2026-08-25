@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Header from "@/components/Header";
 
 const sections = [
   {
@@ -71,35 +72,7 @@ export default function TermsAndConditionsPage() {
 
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
-      {/* Header */}
-      <header className="border-b border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-6 lg:px-8">
-          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-wider text-blue-600">
-                Qubinaire Services Private Limited
-              </p>
-
-              <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">
-                Terms & Conditions
-              </h1>
-
-              <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-600">
-                Student Enrollment, Training and 100% Job Guarantee Program
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-slate-200 bg-slate-50 px-5 py-4">
-              <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
-                Program
-              </p>
-              <p className="mt-1 font-semibold text-slate-900">
-                Training + Placement
-              </p>
-            </div>
-          </div>
-        </div>
-      </header>
+     <Header/>
 
       {/* Important Notice */}
       <section className="bg-blue-600">
