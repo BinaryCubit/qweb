@@ -59,7 +59,7 @@ export default function Footer() {
           <p>© 2026 QUBINAIRE SERVICES PVT LTD | ALL RIGHTS RESERVED</p>
           <div className="flex gap-6">
             <Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link>
-            <Link href="/privacy-policy" className="hover:text-white">Terms of Service</Link>
+            <Link href="/terms-and-conditions" className="hover:text-white">Terms of Service</Link>
             <Link href="/privacy-policy" className="hover:text-white">Placement Policy</Link>
           </div>
         </div>
