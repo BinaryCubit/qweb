@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { type SanityDocument } from "next-sanity";
 import { client } from "@/sanity/client";
 import Header from "@/components/Header";
+import PricingComparisonPage from "@/components/programs/pricing";
 const POSTS_QUERY = `*[_type == "courses"] | order(_createdAt desc){
   _id,
   title,
@@ -72,6 +73,7 @@ export default async function ProgramsPage() {
           <Link href="httpswa.me/8398948765" className="inline-block bg-[#3B7EBB] text-white px-12 py-5 rounded-2xl font-black transition-all hover:scale-110 shadow-2xl">BOOK A FREE MENTOR SESSION</Link>
         </div>
       </section>
+      <PricingComparisonPage/>
       <Footer />
     </>
   );
