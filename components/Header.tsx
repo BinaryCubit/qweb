@@ -36,9 +36,9 @@ export default function Header() {
           <div className="flex items-center gap-4 font-bold tracking-widest text-[10px]">
             <span className="hidden sm:inline-block opacity-40 uppercase">Follow:</span>
             <div className="flex gap-3">
-              <a href="#" className="hover:text-[#7FB8E1]"><Instagram size={14} /></a>
-              <a href="#" className="hover:text-[#7FB8E1]"><Linkedin size={14} /></a>
-              <a href="#" className="hover:text-[#7FB8E1]"><Facebook size={14} /></a>
+              <a href="https://instagram.qubinaire.co.in" className="hover:text-[#7FB8E1]"><Instagram size={14} /></a>
+              <a href="https://linkedin.qubinaire.co.in" className="hover:text-[#7FB8E1]"><Linkedin size={14} /></a>
+              <a href="https://facebook.qubinaire.co.in" className="hover:text-[#7FB8E1]"><Facebook size={14} /></a>
             </div>
           </div>
         </div>
